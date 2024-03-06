@@ -9,6 +9,7 @@ namespace Mission6_McLaughlin.Models
         {
         }
 
-        public DbSet<Movie> Movie {  get; set; }
+        public DbSet<Movie> Movies {  get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

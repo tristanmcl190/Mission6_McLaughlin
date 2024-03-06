@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Movie
+
+<div class="text-center">
+    <h1>Delete Movie</h1>
+</div>
+
+<div>
+    <h3>Are you sure you want to delete this movie?</h3>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+    </dl>
+    <form asp-controller="Home" asp-action="Delete" method="post">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="MovieList" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
